@@ -1,0 +1,16 @@
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^home/?$ index.php [L]
+
+RewriteRule ^alumni/?$ views/Alumni/index.php
+RewriteRule ^admin/?$ views/Admin/index.php
+RewriteRule ^tambahalumni/?$ views/Admin/tambah_alumni.php
+RewriteRule ^tambahlegalisir/?$ views/Admin/tambah_legalisir.php
+RewriteRule ^editalumni/?$ views/Admin/edit_alumni.php
+RewriteRule ^editlegalisir/?$ views/Admin/edit_legalisir.php
+RewriteRule ^prosesalumni/?$ views/Admin/proses_alumni.php
+RewriteRule ^proseslegalisir/?$ views/Admin/proses_legalisir.php
+RewriteRule ^hapusalumni/?$ views/Admin/hapus_alumni.php
+RewriteRule ^hapuslegalisir/?$ views/Admin/hapus_legalisir.php
